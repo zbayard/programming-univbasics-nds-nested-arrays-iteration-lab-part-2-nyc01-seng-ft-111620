@@ -1,12 +1,13 @@
 def find_min_in_nested_arrays(src)
   # src will be an array of arrays of integers
-  min_array = []
+  new_array = []
   row_index = 0
   while row_index < src.count do
     element_index = 0
+    
     while element_index <src[row_index].count do
-
-        min_array << src[row_index][element_index]
+      if src[row_index][element_index].min
+        p src[row_index][element_index]
       end
       element_index += 1
     end
@@ -14,4 +15,6 @@ def find_min_in_nested_arrays(src)
   end
 
 
-    # Output all even values in each nested array
+  end
+
+
